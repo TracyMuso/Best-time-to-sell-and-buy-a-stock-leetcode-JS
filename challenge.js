@@ -27,7 +27,7 @@ var maxProfit = function(prices) {
             tail += 1;
             //if tail exceeds the end position move one step for the head pointer and set tail to head' next position
             if(tail === prices.length){
-                head += 1;
+                head = 1;
                 tail = head + 1;
                 //same as above
                 if(tail === prices.length)
